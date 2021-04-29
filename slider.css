@@ -1,0 +1,41 @@
+.slider {
+	width: 100%;/*ancho del slide*/
+	height:auto;
+	margin: auto; /*margen del slide*/
+	overflow: hidden;/*oculta las imagenes por fuera, coloca la imagenes una atras de la otra*/
+    
+}
+
+.slider ul {
+	display: flex;/*coloca las imagenes de forma horizontal*/
+	padding: 0;/* quita el borde interno de la imagen*/
+	width: 400%;/*espacio del ul para el recorrido de la imagen*/
+	
+	animation: cambio 20s infinite alternate linear;/*crea la animacion*/
+}
+.slider li {
+	width: 100%; /*ancho de cada  li*/
+	list-style: none;/*quita el estilo de la lista  , los puntos del li*/
+}
+
+.slider img {
+	width: 100%;/*ancho de la imagen*/
+}
+
+@keyframes cambio { /*las paradas del slide, el cambio de cada imagen es de 4 seg*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+

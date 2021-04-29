@@ -1,0 +1,156 @@
+<html>
+<head>
+<title>cenal</title>
+<link rel="stylesheet" href="responsive.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="slider.css">
+<link rel="stylesheet" href="menu.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+<nav class="topnav" id="myTopnav">
+  <a href="#" class="active">Menú Del Dia</a>
+  <a href="#seccion1">Desayunos</a>
+  <a href="#seccion2">Almuerzos</a>
+  <a href="#seccion3">Comidas</a>
+  <a href="#seccion4">Bebidas</a>
+  <a href="#seccion5">Comenta</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</nav>
+
+<div class="slider"> 
+     <ul>
+	 <li><img src="imagen/1.png"/> </li>
+	 <li><img src="imagen/2.png"/></li>
+	 <li><img src="imagen/3.png"></li>
+	 <li><img src="imagen/4.png"></li>
+	 </ul>
+</div>
+</header>
+
+<section id="seccion1">
+
+<h1>Desayunos</h1>
+
+<h2>Huevos</h2>
+<h3>Huevos revueltos pan y cafe  ______ $15.000</h3>
+<p>Tomate, cebolla, maiz, jamon y queso.</p>
+
+
+<h2>Tortillas</h2>
+<h3>Tortillas pan y cafe  ______ $17.000</h3>
+<p> Maíz amarillo. Aguacate. Cilantro. Limón. Tomatillo. Cebolla roja. Ají tomate. Carne de cerdo desmechada. 
+Ají. Queso rallado. Sal. Pimienta..</p>
+
+
+<h2>Omelettes</h2>
+<h3>Omelettes pan y cafe  ______ $20.000</h3>
+<p>Huevos, jamos cocido natural,queso tipo suizo, sal y pimienta. </p>
+
+
+</section>
+
+<section id="seccion2">
+
+<h1>Almuerzos</h1>
+
+<h2>Sopas</h2>
+<h3>Sopa de Pollo  ______ $15.000</h3>
+<p>Tomate, cebolla, maiz, jamon y queso.</p>
+
+<h3>Ajiaco  ______ $17.000</h3>
+<p> Maíz amarillo. Aguacate. Cilantro. Limón. Tomatillo. Cebolla roja. Ají tomate. Carne de cerdo desmechada. 
+Ají. Queso rallado. Sal. Pimienta..</p>
+
+
+<h2>Parrilla</h2>
+<h3>Parrilla Argentina  ______ $40.000</h3>
+<p>Huevos, jamos cocido natural,queso tipo suizo, sal y pimienta. </p>
+
+</section>
+
+<section id="seccion3">
+
+<h1>Comidas</h1>
+
+<h2>Carnes</h2>
+<h3>Baby beef  ______ $45.000</h3>
+<p>Tomate, cebolla, maiz, jamon y queso.</p>
+
+<h3>Punta de Anca  ______ $50.000</h3>
+<p>Tomate, cebolla, maiz, jamon y queso.</p>
+
+<h3>Chuleta de Cerdo  ______ $40.000</h3>
+<p>Tomate, cebolla, maiz, jamon y queso.</p>
+
+<h3>Chuleta de Pollo  ______ $40.000</h3>
+<p>Tomate, cebolla, maiz, jamon y queso.</p>
+
+</section>
+
+<section id="seccion4">
+
+<h1>Bebidas</h1>
+<p>
+<table border="0">
+<tr>
+<td><h2>Bebidas</h2></td>
+</tr>
+<tr>
+<td><h3>Gaseosa</h3></td> 
+<td><h3>$5.000</h3></td>
+</tr>
+<tr>
+<td><h3>Jugos</h3></td> 
+<td><h3>$6.000</h3></td>
+</tr>
+<tr>
+<td><h3>Te</h3></td> 
+<td><h3>$4.000</h3></td>
+</tr>
+<tr>
+<td><h3>Limonada</h3></td> 
+<td><h3>$5.000</h3></td>
+</tr>
+<tr>
+<td><h3>Cerveza</h3></td> 
+<td><h3>$7.000</h3></td>
+</tr>
+
+
+
+</table>
+</p>
+
+</section>
+
+<form method="post" action="correo.php">
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required="required"/>
+<label for="email">Email</label>
+<input type="text" id="email" name="email" placeholder="Escribe tu email" required="required"/>
+<label for="mensaje">Mensaje</label>
+<textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required="required"></textarea>
+<input class="boton" type="submit" name="boton" value="Enviar"/>
+</form>
+
+<footer>
+Derechos Reservados <br> Jorge pinto
+</footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
